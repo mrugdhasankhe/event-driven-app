@@ -280,8 +280,8 @@ import json
 def lambda_handler(event, context):
     print("Received event:", json.dumps(event))
     raise Exception("Forced failure for DLQ testing")
-
-----
+```
+---
 
 #### Step 3
 
@@ -289,7 +289,7 @@ def lambda_handler(event, context):
 ```bash
 cd lambda/processor
 Compress-Archive -Path .\index.py -DestinationPath .\function.zip -Force
-
+```
 - Deploy the updated function using 'terraform apply'.
 
 ----
@@ -373,7 +373,7 @@ cors_configuration {
   allow_methods = ["GET", "POST", "OPTIONS"]
   allow_headers = ["content-type"]
 }
-
+```
 
 ----
 
