@@ -6,9 +6,10 @@ This project demonstrates a **serverless event-driven application** built on AWS
 
 The application enables users to:
 - Send requests through API Gateway
+- Ingest and store request data in DynamoDB using the Ingestor Lambda
 - Process events asynchronously using Amazon SQS
 - Trigger Lambda functions for ingestion and processing
-- Store processed data in DynamoDB
+- Update processed data in DynamoDB using the Processor Lambda
 - Receive notifications via Amazon SNS
 
 The system follows an event-driven architecture where services communicate through events, ensuring scalability, fault tolerance, and decoupled processing.
