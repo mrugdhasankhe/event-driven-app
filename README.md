@@ -274,18 +274,18 @@ To test the Dead Letter Queue (DLQ), the processor Lambda was intentionally made
 - Update the Lambda function to throw an exception so that processing fails intentionally.
 - Open lambda/processor/index.py and replace the whole file with this temporary test version:
 
-import json
+    import json
 
-def lambda_handler(event, context):
-    print("Received event:", json.dumps(event))
-    raise Exception("Forced failure for DLQ testing")
+    def lambda_handler(event, context):
+        print("Received event:", json.dumps(event))
+        raise Exception("Forced failure for DLQ testing")
 
 
 #### Step 3
 
 - Repackage the updated processor Lambda function.
-- cd lambda\processor
-  Compress-Archive -Path .\index.py -DestinationPath .\function.zip -Force
+-    cd lambda\processor
+     Compress-Archive -Path .\index.py -DestinationPath .\function.zip -Force
 
 - Deploy the updated function using 'terraform apply'.
 
@@ -346,7 +346,7 @@ This confirms that the message failed processing and was redirected to the DLQ s
 #### Root Cause
 
 - The frontend was initially opened using:
-file://
+   file://
 - This caused a browser-origin problem, and the browser blocked API requests.
 
 - The browser console showed the actual issue:
@@ -361,11 +361,11 @@ file://
 
 - Updated the API configuration in Terraform to include:
 
-cors_configuration {
-allow_origins = ["*"]
-allow_methods = ["GET", "POST", "OPTIONS"]
-allow_headers = ["content-type"]
-}
+   cors_configuration {
+   allow_origins = ["*"]
+   allow_methods = ["GET", "POST", "OPTIONS"]
+   allow_headers = ["content-type"]
+   }
 
 ---
 
