@@ -46,7 +46,7 @@ The following AWS services are used in this project:
 
 ## Architecture Diagram
 
-![Architecture](Screenshot\Event_driven_app_architecture.png)
+![Architecture](Screenshot/Event_driven_app_architecture.png)
 
 ## Architecture Overview
 
