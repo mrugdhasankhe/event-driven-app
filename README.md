@@ -272,7 +272,6 @@ To test the Dead Letter Queue (DLQ), the processor Lambda was intentionally made
 
 - Modify the processor Lambda code to force a failure.
 - Update the Lambda function to throw an exception so that processing fails intentionally.
-- 
 - Open lambda/processor/index.py and replace the whole file with this temporary test version:
 
 ```python
