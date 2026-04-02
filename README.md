@@ -159,7 +159,7 @@ The following test cases were performed to validate the application functionalit
 ---
 ### 9. Initial frontend test
 
-- Got Verified output on screen reagrding rewview request being sucessful.
+- Got Verified output on screen reagrding review request being sucessful.
 
 ![Intial Frontend Test](Screenshot/Initial_frontend_testing.png)
 
