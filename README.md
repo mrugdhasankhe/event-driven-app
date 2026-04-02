@@ -274,11 +274,11 @@ To test the Dead Letter Queue (DLQ), the processor Lambda was intentionally made
 - Update the Lambda function to throw an exception so that processing fails intentionally.
 - Open lambda/processor/index.py and replace the whole file with this temporary test version:
 
-    import json
+   > import json
 
-    def lambda_handler(event, context):
-        print("Received event:", json.dumps(event))
-        raise Exception("Forced failure for DLQ testing")
+    > def lambda_handler(event, context):
+        >print("Received event:", json.dumps(event))
+        >raise Exception("Forced failure for DLQ testing")
 
 
 #### Step 3
