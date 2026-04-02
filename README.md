@@ -157,7 +157,15 @@ The following test cases were performed to validate the application functionalit
 ![SNS Subscription](Screenshot/SNS_subscription_creation.png)
 
 ---
-### 11. DynamoDB Validation
+### 9. Initial frontend test
+
+- Got Verified output on screen reagrding rewview request being sucessful.
+
+![Intial Frontend Test](Screenshot/Initial_frontend_testing.png)
+
+---
+
+### 10. DynamoDB Validation
 
 - Verified that the ingestor Lambda stored the initial record in DynamoDB.
 
@@ -165,7 +173,7 @@ The following test cases were performed to validate the application functionalit
 
 ---
 
-### 12. Ingestor Lambda Log Verification
+### 11. Ingestor Lambda Log Verification
 
 - Opened AWS Console → Lambda → event-driven-app-dev-ingestor → Monitor → View CloudWatch logs
 - Verified that the ingestor Lambda executed successfully without errors.
@@ -173,7 +181,7 @@ The following test cases were performed to validate the application functionalit
 ![Ingestor Logs](Screenshot/Initial_ingestor_eventlog.png)
 
 ---
-### 13. Processor Lambda Log Verification
+### 12. Processor Lambda Log Verification
 
 - Opened AWS Console → Lambda → event-driven-app-dev-processor → Monitor → View CloudWatch logs
 - Verified that the processor Lambda executed successfully without errors.
@@ -182,7 +190,7 @@ The following test cases were performed to validate the application functionalit
 
 ---
 
-### 14. SNS Notification Verification
+### 13. SNS Notification Verification
 
 - Verified that email notification was received successfully as a subscriber.
 
