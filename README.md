@@ -281,7 +281,7 @@ def lambda_handler(event, context):
     print("Received event:", json.dumps(event))
     raise Exception("Forced failure for DLQ testing")
 
----
+----
 
 #### Step 3
 
@@ -292,7 +292,7 @@ Compress-Archive -Path .\index.py -DestinationPath .\function.zip -Force
 
 - Deploy the updated function using 'terraform apply'.
 
----
+----
 
 #### Step 4
 
@@ -375,7 +375,7 @@ cors_configuration {
 }
 
 
----
+----
 
 **Part B — Stop using file://**
 
