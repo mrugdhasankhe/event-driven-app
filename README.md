@@ -256,7 +256,7 @@ This allows the actual messages in the queue to be viewed.
 - After enabling trigger,in millisecond I got notification from amazon sns.
 
 
-![Processed Stuck message](Screenshot\SQS_stuck_message_got_processed_after_enabling_trigger.png)
+![Processed Stuck message](Screenshot/SQS_stuck_message_got_processed_after_enabling_trigger.png)
 
 ---
 
